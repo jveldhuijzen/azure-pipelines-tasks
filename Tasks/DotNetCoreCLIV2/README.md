@@ -21,7 +21,7 @@ The only prerequisite for the task is that .NET Core must be installed on Azure 
 * **Arguments\:** Pass arguments to the selected dotnet core command. For example, build configuration, output folder, runtime. The arguments depend on the command selected.
 
 Options specific to **dotnet publish** command
-* **Publish Web Projects\*:** If true, the task will try to find the web projects in the repository and run the publish command on them. Web projects are identified by presence of either a web.config file or wwwroot folder in the directory.
+* **Publish Web Projects\*:** If true, the task will try to find the web projects in the repository and run the publish command on them. Web projects are identified by presence of either a web.config file or wwwroot folder in the directory. Default value: true.
 * **Zip Published Projects\*:** If true, folder created by the publish command will be zipped.
 * **Add project name to publish path\*:** If true, folders created by the publish command will have project file name prefixed to their folder names when output path is specified explicitly in arguments. This is useful if you want to publish multiple projects to the same folder.
 
